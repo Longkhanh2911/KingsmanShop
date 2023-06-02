@@ -1,0 +1,370 @@
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+}
+h3 {
+    color: rgb(227, 198, 103);
+}
+#wrapper {
+    width: 100%;
+    height: 100%;
+    background-color: #dee6e3;
+}
+header {
+    display: block;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: #714e2b;
+    /* #714e2b màu header */
+}
+#header {
+    width: 100%;
+    height: 100px;
+    padding: 0px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img {
+    width: 150px;
+    height:90px;
+    margin-left: 60px;
+    margin-top: 0px;
+}
+#menu {
+    list-style: none;
+    display: flex;
+}
+#menu .item {
+    margin: 0px 30px;
+}
+/* color: rgb(227, 198, 103); */
+#menu .item a {
+    color: rgb(227, 198, 103);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 0.5s ease;
+    padding: 10px;
+    transition: all 0.5s ease;
+}
+#menu .item a:hover {
+    color: red;
+    border: 1px solid rgb(24, 24, 73);
+    border-radius: 8px;
+    transform: scale(1.1);
+}
+#actions {
+    display: flex;
+    margin-right: 50px;
+}
+#actions .user{
+    margin-right: 50px;
+}
+#actions .user:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+#actions .cartItem:hover{
+    transform: scale(1.1);
+    color: #f42424;
+}
+#banner {
+    width: 100%;
+    background-image: url("image/bcr.jpg");
+    height: 570px;
+    margin-top: 90px;
+    display: flex;
+    padding: 0px 30px;
+    position: relative;
+}
+#banner .box-left ,#banner .box-right {
+    width: 50%;
+}
+
+#banner .box-left h2 {
+    font-size:48px;
+    margin-top:150px;
+    color:rgb(227, 198, 103);;
+}
+
+#banner .box-left p {
+    color:rgb(227, 198, 103);;
+    margin-top: 5px;
+}
+
+#banner .box-left button {
+    width: 185px;
+    height: 40px;
+    margin-top:40px;
+    background:#302e70;
+    border:none;
+    outline:none;
+    color:rgb(227, 198, 103);;
+    font-weight: bold;
+    border-radius: 20px;
+    transition:0.4s;
+    font-size: larger;
+}
+
+#banner .box-left button:hover {
+    background:orange;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+#banner .box-right {
+    padding-left:300px;
+    display: flex;
+    align-items: center;
+}
+#banner .box-right img {
+    border-radius: 25px;
+}
+#banner .box-right img {
+    margin:0px 10px;
+    animation :animation 3s infinite linear; 
+}
+
+#banner .box-right img:nth-child(2)
+{
+    
+    animation-delay: 1s;
+}
+
+@keyframes animation {
+    0%{
+        transform:translateY(0px);
+    }
+    50%{
+        transform: translatey(-10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+    
+}
+#inforProducts {
+    padding-top:100px;
+    padding-bottom: 78px;
+    padding-left:134px;
+    padding-right:134px;
+}
+#inforProducts h2 {
+    text-align: center;
+    margin-bottom: 76px;
+    font-size:32px;
+    color:rgb(18, 27, 50);
+}
+#list-products {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#list-products .item {
+    width: 290px;
+    height: 450px;
+    background:hsl(234, 28%, 39%);
+    border-radius: 10px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+#list-products .item img {
+    display: block;
+    margin:0px auto;
+    margin-top: 17px;
+    transition: all 1.5s ease;
+    height: 250px;
+    width: 240px;
+}
+#list-products .item img:hover{
+    transform: scale(1.1)
+}
+#list-products .item .name {
+    text-align: center;
+    color:#0f0808;
+    font-weight: bold;
+    margin-top:21px;
+}
+#list-products .item .desc {
+    text-align: center;
+    color:#e7d45b;
+}
+#list-products .item .price {
+    text-align: center;
+    color:#f7e955;
+    font-weight: bold;
+    margin-top:20px;
+}
+#list-products .item button {
+    color: #974a07;
+    font-weight: bold;
+    transition: all 1.5s ease;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 140px;
+    height: 30px;
+}
+#list-products .item button:hover {
+    transform: scale(1.1);
+    color: rgb(31, 42, 238);
+    cursor: pointer;
+}
+#lastPage {
+    height: 250px;
+    display: flex;
+    justify-content:space-around;
+    background-color: #714e2b;
+}
+#lastPage .logo img {
+    width: 180px;
+    height: 160px;
+    margin-left: 140px;
+    margin-top: 42px;
+}
+#lastPage .logo p {
+    color:rgb(227, 198, 103);
+    margin-left: 84px;
+    font-size: 18px;
+}
+.content {
+    margin-top: 30px;
+    color: rgb(255, 255, 255);
+}
+.content a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: block;
+    margin-top: 17px;
+}
+.content a:hover {
+    color: #921212;
+    transform: scale(1.1);
+}
+.contact {
+    margin-top: 30px;
+    color: rgb(255, 255, 255);
+}
+.contact button:hover {
+    background-color: #921212;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.contact p {
+    margin-top: 14px ;
+}
+#cart h2 {
+    margin-bottom: 20px;
+}
+#cart table {
+    width: 100%;
+}
+#cart thead{
+    font-size: 15px;
+    color:#302e70;
+}
+#cart thead tr th{
+    border: 1px solid black;
+    height: 25px;
+}
+#cart thead tr th:first-child{
+    text-align: left;
+}
+#cart thead tr th:last-child {
+    text-align: right;
+}
+#cart tbody tr td:last-child {
+    text-align: right;
+    cursor: pointer;
+}
+#cart tbody tr td:first-child {
+    text-align: left;
+    font-size: smaller;   
+    font-weight: bold;
+}
+#cart tbody tr td {
+    border-bottom:1px solid #837b7b;
+    padding: 20px 0;
+    font-size: 15px;
+}
+#cart tbody tr td img {
+    width: 100px;
+}
+#cart tbody input {
+    width: 35px;
+
+}
+#cart .priceTotal {
+    font-weight: bold;
+    text-align: right;
+    margin-top: 10px;
+}
+.delete:hover{
+    color: #f42424;
+}
+#cart {
+    position: fixed;
+    height: 88%;
+    width: 450px;
+    right: -500px;
+    top: 100px;
+    background-color: #bac3d1;
+    padding: 15px;
+    overflow-y: scroll;
+    text-align: center;
+    border: 1px solid hsl(222, 39%, 65%);
+}
+#cart img {
+    width: 30px;
+    cursor: pointer;
+}
+#cart img:hover{
+    transform: scale(1.1);
+    
+}
+#cart button {
+    background-color: #f42424;
+    color: white;
+    width: 100px;
+    height: 25px;
+    border-radius: 5px;
+    margin-top: 30px;
+    transition: all 1.3s ease;
+}
+#cart button:hover{
+    background-color:  #5e81bd;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+#logIn {
+    position: fixed;
+    display: block;
+    width: 100px;
+    height: 80px;
+    top: 20px;
+    right: -100%;
+    
+}
+#logIn .email {
+    margin-bottom: 5px;
+}
+#logIn .password {
+    margin-bottom: 5px;
+}
+#logIn button {
+    width: 100px;
+    padding: 3px 0px;
+    cursor: pointer;
+    background-color: #414358;
+    color: white;
+    border-radius: 5px;
+}
+#logIn button:hover {
+    background-color: #f42424;
+}
